@@ -1,0 +1,18 @@
+@import url("pages/ListaCampeoes/lista.css");
+@import url("pages/Login/login.css");
+
+:root {
+    --branco-principal: #f9f9f9;
+    --branco-secundario: #ffffff; 
+    --verde-agua: #0BC4E2;
+    --azul-marinho: #02149e;
+    --dourado: #d0a85c;
+    --preto-principal: #010101;
+    --preto-secundario: #000000;
+    --cinza: #969595;
+
+    --fonte-principal: "Montserrat";
+    --fonte-secundaria: "Oswald";
+    --fonte-terciaria: "Raleway";
+    --fonte-quaternaria: "Inter";
+} 
