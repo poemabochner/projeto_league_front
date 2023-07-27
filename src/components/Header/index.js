@@ -16,10 +16,10 @@ function Header() {
         </div>
 
         <div className="header__lado-direito">
-            <p className="header__texto">
-              Fulano, bem-vindo a summoner's rift!
-            </p>
-            <img src={Sair} alt="ícone de Sair" />
+          <p className="header__texto">Fulano, bem-vindo a summoner's rift!</p>
+          <button className="header__botao">
+            <img className="header__botao-icone" src={Sair} alt="ícone de Sair" />
+          </button>
         </div>
       </div>
     </>

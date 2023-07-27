@@ -6,27 +6,27 @@ function Login() {
   return (
     <>
       <div className="container__login">
-        <div className="lado-esquerdo">
+        <div className="lado-esquerdo__login">
           <img
-            className="lado-esquerdo__imagem"
+            className="lado-esquerdo__imagem__login"
             src={LogoLol}
             alt="Logo do League of Legends"
           />
-          <p className="lado-esquerdo__texto">
+          <p className="lado-esquerdo__texto__login">
             O League of Legends é um jogo estratégico e muito divertido. O
             projeto Escolha Seu Campeão visa ajudar novos jogadores a conhecerem
             melhor os campeões do jogo e, até mesmo, auxiliar jogadores já com
             experiência a encontrar um novo personagem para se aventurar.
           </p>
         </div>
-        <div className="lado-direito">
-          <div className="lado-direito__login">
+        <div className="lado-direito__login">
+          <div className="lado-direito__login__login">
             <img
-              className="lado-direito__imagem"
+              className="lado-direito__imagem__login"
               src={LogoProjeto}
               alt="Logo do Projeto Escolha Seu Campeão"
             />
-            <form className="lado-direito__form">
+            <form className="lado-direito__form__login">
               <div className="input__container">
                 <label>Usuário</label>
                 <input className="formulario__input"

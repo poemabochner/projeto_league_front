@@ -7,8 +7,8 @@
 }
 
 .header__img {
-    width: 270px;
-    height: 132px;
+    width: 16.875em;
+    height: 8.25em;
 }
 
 .header__lado-direito {
@@ -21,6 +21,19 @@
     font-family: var(--fonte-principal);
     font-weight: 700;
     font-size: 20px;
-    width: 170px;
+    width: 8.5em;
     line-height: 1.2em;
+}
+
+.header__botao {
+    background-color: var(--verde-agua);
+    border: transparent;
+}
+
+.header__botao:hover {
+    cursor: pointer;
+}
+
+.header__botao-icone:hover {
+    filter: invert(80%) sepia(0%) saturate(3533%) hue-rotate(211deg) brightness(118%) contrast(87%);
 }

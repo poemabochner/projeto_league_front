@@ -1,0 +1,28 @@
+.container__lista-superior{
+    display: flex;
+    align-items: center;
+}
+
+.lado-esquerdo__lista {
+  color: var(--preto-principal);
+  font-family: var(--fonte-secundaria);
+  font-weight: bold;
+  font-size: 1.75em;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 20%;
+  padding: 2em 4em 2em 3em;
+}
+
+.lado-esquerdo__titulo-destaque__lista {
+  font-size: 4em;
+}
+
+.lado-direito__lista-texto {
+    color: var(--preto-principal);
+    font-family: var(--fonte-terciaria);
+    padding: 4em 5em 0 9em;
+    height: 8.125em;
+    font-size: 1.375em;
+}
