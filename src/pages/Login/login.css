@@ -3,49 +3,108 @@
 } */
 
 .container__login {
-    display: flex;
-    height: 100vh;
+  display: flex;
+  min-height: 100vh;
 }
 
 .lado-esquerdo {
-    background-color: var(--verde-agua);
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  background-color: var(--verde-agua);
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .lado-esquerdo__imagem {
-    width: 20em;
-    height: 8.25em;
-    padding: 7em 0 7em 0;
+  width: 20em;
+  height: 8.25em;
+  padding: 7em 0 7em 0;
 }
 
 .lado-esquerdo__texto {
-    font-family: var(--fonte-terciaria);
-    font-weight: 600;
-    color: var(--branco-principal);
-    font-size: 1.25rem;
-    padding: 0 7em 0 7em;
+  font-family: var(--fonte-terciaria);
+  font-weight: 600;
+  color: var(--branco-principal);
+  font-size: 1.25rem;
+  padding: 0 7em 0 7em;
+  padding-bottom: 5em;
 }
 
 .lado-direito {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
 }
 
 .lado-direito__login {
-    border: 1px solid var(--preto-secundario);
-    width: 30em;
-    height: 35em;
-    border-radius: 0.5em;
-    display: flex;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--preto-secundario);
+  width: 30em;
+  height: 35em;
+  border-radius: 0.5em;
+  align-items: center;
+  padding-bottom: 1em;
 }
 
 .lado-direito__imagem {
-    width: 20em;
-    height: 8.25em;
+  padding-top: 4.5em; 
+  width: 15em;
+  height: 6.25em;
+}
+
+.lado-direito__form {
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+  padding-top: 3em;
+}
+
+.input__container {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--fonte-principal);
+  font-weight: 500;
+  color: var(--preto-principal);
+  padding: 1em;
+}
+
+#usuario,
+#senha {
+  font-family: var(--fonte-principal);
+}
+
+.formulario__input {
+  width: 26em;
+  height: 3em;
+  border-radius: 10px;
+  border: solid 1px var(--cinza);
+  margin-top: 0.5em;
+  padding-left: 1em;
+}
+
+.formulario__input:focus {
+    outline: none;
+}
+
+.form__botao {
+    background-color: var(--verde-agua);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+    width: 9em;
+    height: 3.25em;
+    font-size: 1em;
+    cursor: pointer;
+    border: transparent;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3em;
+}
+
+.form__botao:hover {
+    background-color: rgb(9, 140, 160);   
 }

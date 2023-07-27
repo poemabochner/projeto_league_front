@@ -1,6 +1,6 @@
 import "./login.css";
 import LogoLol from "../../assets/LogoLol.png";
-import LogoProjeto from "../../assets/logo1.png"
+import LogoProjeto from "../../assets/logo1.png";
 
 function Login() {
   return (
@@ -13,14 +13,40 @@ function Login() {
             alt="Logo do League of Legends"
           />
           <p className="lado-esquerdo__texto">
-            O League of Legends é um jogo estratégico e muito divertido O
+            O League of Legends é um jogo estratégico e muito divertido. O
             projeto Escolha Seu Campeão visa ajudar novos jogadores a conhecerem
-            melhor os campeões do jogo e, até mesmo,
+            melhor os campeões do jogo e, até mesmo, auxiliar jogadores já com
+            experiência a encontrar um novo personagem para se aventurar.
           </p>
         </div>
         <div className="lado-direito">
           <div className="lado-direito__login">
-            <img className="lado-direito__imagem" src={LogoProjeto} alt="Logo do Projeto Escolha Seu Campeão"/>
+            <img
+              className="lado-direito__imagem"
+              src={LogoProjeto}
+              alt="Logo do Projeto Escolha Seu Campeão"
+            />
+            <form className="lado-direito__form">
+              <div className="input__container">
+                <label>Usuário</label>
+                <input className="formulario__input"
+                  type="text"
+                  name="usuário"
+                  id="usuario"
+                  placeholder="Digite seu nome de usuário"
+                ></input>
+              </div>
+              <div className="input__container">
+                <label>Senha</label>
+                <input className="formulario__input"
+                  type="text"
+                  name="senha"
+                  id="senha"
+                  placeholder="Digite sua senha"
+                ></input>
+              </div>
+              <button className="form__botao">Entrar</button>
+            </form>
           </div>
         </div>
       </div>
