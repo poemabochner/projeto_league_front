@@ -1,0 +1,30 @@
+.container__rodape {
+    background-color: var(--preto-principal);
+    color: var(--branco-secundario);
+    display: flex;
+    justify-content: flex-end;
+    padding: 2em 3em 4em 0;
+    align-items: center;
+    gap: 35%;
+    position: fixed;
+    bottom:0;
+    width: 100%;
+}
+
+.texto__rodape {
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    font-size: 20px;
+    padding-left: 2em;
+}
+
+.icones__rodape{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    padding-right: 5em;
+}
+
+.icones__rodape__icon:hover {
+    filter: invert(25%) sepia(90%) saturate(3269%) hue-rotate(144deg) brightness(99%) contrast(91%);
+}

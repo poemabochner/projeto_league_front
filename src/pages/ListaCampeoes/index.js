@@ -1,6 +1,7 @@
 import "./lista.css";
 
 import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 
 function ListaCampeoes() {
   return (
@@ -20,6 +21,7 @@ function ListaCampeoes() {
           </p>
         </div>
       </div>
+      <Footer/>
     </>
   );
 }

@@ -4,6 +4,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 1em 4em 1.5em 1.5em;
+    position: fixed;
+    top:0;
+    width: 100%;
 }
 
 .header__img {
@@ -26,7 +29,8 @@
 }
 
 .header__botao {
-    background-color: var(--verde-agua);
+    margin-right: 6em;
+    background-color: transparent;
     border: transparent;
 }
 
