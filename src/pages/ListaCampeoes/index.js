@@ -1,9 +1,11 @@
 import './lista.css';
 
+import Header from '../../components/Header';
+
 function ListaCampeoes() {
     return (
       <>
-        <h1>ListaCampeoes</h1>
+        <Header/>
       </>
     );
   }

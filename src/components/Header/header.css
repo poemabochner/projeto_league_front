@@ -1,0 +1,26 @@
+.header__container {
+    background-color: var(--verde-agua);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 4em 1.5em 1.5em;
+}
+
+.header__img {
+    width: 270px;
+    height: 132px;
+}
+
+.header__lado-direito {
+    display: flex;
+    gap: 5em;
+}
+
+.header__texto {
+    color: var(--branco-secundario);
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    font-size: 20px;
+    width: 170px;
+    line-height: 1.2em;
+}
