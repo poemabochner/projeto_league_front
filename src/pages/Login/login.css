@@ -27,7 +27,7 @@
   color: var(--branco-principal);
   font-size: 1.25rem;
   padding: 0 7em 0 7em;
-  padding-bottom: 5em;
+  padding-bottom: 3em;
 }
 
 .lado-direito {
@@ -96,7 +96,7 @@
     width: 9em;
     height: 3.25em;
     font-size: 1em;
-    cursor: pointer;
+    
     border: transparent;
     border-radius: 10px;
     display: flex;
@@ -107,4 +107,5 @@
 
 .form__botao:hover {
     background-color: rgb(9, 140, 160);   
+    cursor: pointer;
 }
