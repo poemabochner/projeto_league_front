@@ -2,6 +2,7 @@ import "./lista.css";
 
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
+import ComponenteLista from "./components/ComponenteLista";
 
 function ListaCampeoes() {
   return (
@@ -20,6 +21,22 @@ function ListaCampeoes() {
             identificar para poder aproveitar o jogo.{" "}
           </p>
         </div>
+      </div>
+      <div className="container__lista-inferior">
+      <div className="container__lista-inferior__campeoes">
+        <ComponenteLista/>
+        <ComponenteLista/>
+        <ComponenteLista/>
+        <ComponenteLista/>
+        <ComponenteLista/>
+        <ComponenteLista/>
+        <ComponenteLista/>
+        <ComponenteLista/>
+        <ComponenteLista/>
+        <ComponenteLista/>
+        <ComponenteLista/>
+        <ComponenteLista/>
+      </div>
       </div>
       <Footer/>
     </>

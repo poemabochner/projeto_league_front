@@ -6,9 +6,8 @@
     padding: 2em 3em 4em 0;
     align-items: center;
     gap: 35%;
-    position: fixed;
-    bottom:0;
-    width: 100%;
+    min-width: 100vh;
+    margin-top: 5em;
 }
 
 .texto__rodape {

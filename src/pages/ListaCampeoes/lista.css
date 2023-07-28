@@ -1,7 +1,7 @@
-.container__lista-superior{
+.container__lista-superior {
   margin-top: 10em;
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .lado-esquerdo__lista {
@@ -21,9 +21,37 @@
 }
 
 .lado-direito__lista-texto {
-    color: var(--preto-principal);
-    font-family: var(--fonte-terciaria);
-    padding: 4em 5em 0 9em;
-    height: 8.125em;
-    font-size: 1.375em;
+  color: var(--preto-principal);
+  font-family: var(--fonte-terciaria);
+  padding: 4em 5em 0 9em;
+  height: 8.125em;
+  font-size: 1.375em;
 }
+
+.container__lista-inferior {
+  margin-top: 4em;
+  display: flex;
+  justify-content: center;
+}
+
+.container__lista-inferior__campeoes {
+  max-width: 1000px;
+  display: flex;
+  
+  align-items: center;
+  flex-direction: column;
+  /* max-height: 500px;
+  overflow: auto;
+  white-space: nowrap; */
+}
+
+/* .lista-inferior__botao{
+  background-color: var(--dourado);
+  border: transparent;
+  border-radius: 10px;
+  width: 132px;
+  height: 42px;
+  color: var(--branco-principal);
+  font-family: var(--fonte-principal);
+  font-weight: 700;
+} */
