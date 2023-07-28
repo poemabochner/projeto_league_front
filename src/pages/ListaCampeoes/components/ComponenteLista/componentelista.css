@@ -27,6 +27,7 @@
   height: 70px;
   object-fit: cover;
   object-position: top center;
+  z-index: 1;
 }
 
 .componente-lista__img:hover {

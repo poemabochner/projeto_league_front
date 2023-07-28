@@ -8,6 +8,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 9999;
 }
 
 .modal__container {
@@ -26,12 +27,6 @@
   font-size: 36px;
   font-weight: 700;
   padding: 0.8em 0 0 0.5em;
-}
-
-.modal__img {
-}
-
-.modal__container-esquerdo {
 }
 
 .modal__container-direito {
@@ -62,9 +57,9 @@
 }
 
 .modal-habilidades__container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Duas colunas com largura igual /
+  gap: 1rem; / Espaçamento entre as divs */
   max-height: 500px;
 }
 
@@ -98,8 +93,12 @@
 }
 
 .modal__botao {
+  padding: 1.5em 0 1em 3.5em;
+  line-height: 1.5em;
+  max-width: 320px;
   display: flex;
   justify-content: flex-end;
+  align-items: flex-end;
   padding-right: 7em;
   margin-top: 3em;
 }

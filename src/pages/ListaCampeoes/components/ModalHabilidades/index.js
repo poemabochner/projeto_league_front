@@ -75,12 +75,13 @@ const ModalHabilidades = ({ isOpen, onClose, children }) => {
                   ainda maior.
                 </p>
               </div>
+              <div className="modal__botao">
+              <button className="modal__fechar" onClick={onClose}>
+                Fechar
+              </button>
+              </div>
             </div>
           </div>
-          <div className="modal__botao">
-          <button className="modal__fechar" onClick={onClose}>
-            Fechar
-          </button></div>
         </div>
       </div>
     </div>
