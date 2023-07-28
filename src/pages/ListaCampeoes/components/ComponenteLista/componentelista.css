@@ -9,6 +9,17 @@
   min-width: 1000px;
 }
 
+.componente-lista__tooltip-img {
+  background-color: black;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+}
+
+.componente-lista__tooltip-img:hover {
+  cursor: pointer;
+}
+
 .componente-lista__img {
   border-radius: 50%;
   border: 2px solid var(--branco-secundario);
@@ -18,8 +29,12 @@
   object-position: top center;
 }
 
-.componente-lista__caixa{
-    min-width: 160px;
+.componente-lista__img:hover {
+  opacity: 0.5;
+}
+
+.componente-lista__caixa {
+  min-width: 160px;
 }
 
 .componente-lista__titulo {
@@ -31,7 +46,7 @@
 }
 
 .componente-lista__conteudo {
-    text-align: center;
+  text-align: center;
   text-transform: uppercase;
   color: var(--dourado);
   font-family: var(--fonte-quaternaria);
@@ -52,6 +67,6 @@
 }
 
 .componente-lista__botao:hover {
-    cursor: pointer;
-    background-color: #92753e;
+  cursor: pointer;
+  background-color: #92753e;
 }
