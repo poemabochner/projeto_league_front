@@ -1,0 +1,122 @@
+.modal__sobreposicao {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__container {
+  display: flex;
+  background-color: var(--branco-secundario);
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.modal__nome_campeao {
+  position: absolute;
+  font-family: var(--fonte-secundaria);
+  color: var(--branco-secundario);
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 700;
+  padding: 0.8em 0 0 0.5em;
+}
+
+.modal__img {
+}
+
+.modal__container-esquerdo {
+}
+
+.modal__container-direito {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__historia {
+  background-color: var(--verde-agua);
+  padding: 2em 3em 2.5em 5em;
+  color: var(--branco-principal);
+  font-family: var(--fonte-principal);
+  font-weight: 600;
+  line-height: 1.5em;
+  font-size: 18px;
+}
+
+.modal-habilidades {
+  padding: 1em 3em;
+}
+
+.modal-habilidades__titulo {
+  text-transform: uppercase;
+  color: var(--preto-principal);
+  font-family: var(--fonte-secundaria);
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.modal-habilidades__container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 500px;
+}
+
+.modal-habilidades__caixa {
+  padding: 1.5em 0 1em 3.5em;
+  line-height: 1.5em;
+  max-width: 320px;
+}
+
+.modal-habilidades__tecla {
+  text-transform: uppercase;
+  font-family: var(--fonte-secundaria);
+  color: var(--dourado);
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.modal-habilidades__nome {
+  text-transform: uppercase;
+  color: var(--preto-secundario);
+  font-family: var(--fonte-secundaria);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.modal-habilidades__descricao {
+  color: var(--preto-secundario);
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--fonte-quaternaria);
+}
+
+.modal__botao {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 7em;
+  margin-top: 3em;
+}
+
+.modal__fechar {
+  background-color: var(--verde-agua);
+  border: transparent;
+  width: 7em;
+  height: 2.5em;
+  color: var(--branco-principal);
+  font-size: 20px;
+  font-family: var(--fonte-principal);
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+.modal__fechar:hover {
+  cursor: pointer;
+  background-color: rgb(9, 140, 160); 
+}

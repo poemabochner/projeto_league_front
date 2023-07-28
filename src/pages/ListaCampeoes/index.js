@@ -4,7 +4,8 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import ComponenteLista from "./components/ComponenteLista";
 
-function ListaCampeoes() {
+const ListaCampeoes= () => {
+  
   return (
     <>
       <Header />
