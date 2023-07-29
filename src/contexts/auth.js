@@ -1,5 +1,6 @@
 import React, { useState, createContext, useContext } from "react";
 import { doLogin } from '../services/auth';
+import { useEffect } from "react";
 
 export const AuthContext = createContext();
 
@@ -13,8 +14,8 @@ export function useAuth() {
 }
 
 export const AuthProvider = ({children}) => {
-  const [usuario, setUsuario] = useState(null);
-  const [token, setToken] = useState(null);
+  const [usuario, setUsuario] = useState(localStorage.getItem('usuario'));
+  const [token, setToken] = useState(localStorage.getItem('token'));
 
   const login = async(usuario, senhaUsuario) => {
     console.log("login auth", { usuario, senhaUsuario });
@@ -22,8 +23,16 @@ export const AuthProvider = ({children}) => {
 
     try {
       const resposta = await doLogin(usuario, senhaUsuario);
+      console.log("response headers:", resposta.headers);
       setToken(resposta.headers['authorization'])
+      console.log("token:", token);
       setUsuario(usuario); 
+      console.log("authenticated:", !!usuario);
+
+      localStorage.setItem('token', resposta.headers['authorization']);
+      localStorage.setItem('usuario', usuario);
+      window.location = "/listacampeoes";
+
     } catch(err) {
       alert("Usuário e/ou senha incorretos!")
     }
@@ -34,7 +43,9 @@ export const AuthProvider = ({children}) => {
     console.log("logout");
     setUsuario(null);
     setToken(null);
-    window.location = '/login';
+    localStorage.removeItem('token');
+    localStorage.removeItem('usuario');
+    window.location = '/';
   };
 
   return(

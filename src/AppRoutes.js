@@ -1,10 +1,9 @@
-import { useState } from "react";
+
 
 import {
   BrowserRouter as Router,
   Route,
   Routes,
-  Navigate,
 } from "react-router-dom";
 
 import Login from "./pages/Login";
@@ -19,8 +18,8 @@ const AppRoutes = () => {
     <Router>
       <AuthProvider>
         <Routes>
-          <Route exact path="/login" element={<Login />} />
-          <Route exact path="/" element={<ListaCampeoes />} />
+          <Route exact path="/" element={<Login />} />
+          <Route exact path="/listacampeoes" element={<ListaCampeoes />} />
         </Routes>
       </AuthProvider>
     </Router>

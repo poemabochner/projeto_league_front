@@ -7,6 +7,8 @@ import Sair from "../../assets/logout.svg";
 function Header() {
   const { logout } = useAuth();
 
+  
+
   return (
     <>
       <div className="header__container">

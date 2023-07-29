@@ -1,11 +1,26 @@
 import "./lista.css";
 
+import { useEffect } from "react";
+
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import ComponenteLista from "./components/ComponenteLista";
+import { useAuth } from "../../contexts/auth";
 
-const ListaCampeoes= () => {
-  
+const ListaCampeoes = () => {
+
+  const { authenticated } = useAuth();
+
+  useEffect(() => {
+    if (!authenticated) {
+      window.location = "/";
+    }
+  }, [authenticated]);
+
+  if(!authenticated) {
+    return null;
+  }
+
   return (
     <>
       <Header />
@@ -24,24 +39,13 @@ const ListaCampeoes= () => {
         </div>
       </div>
       <div className="container__lista-inferior">
-      <div className="container__lista-inferior__campeoes">
-        <ComponenteLista/>
-        <ComponenteLista/>
-        <ComponenteLista/>
-        <ComponenteLista/>
-        <ComponenteLista/>
-        <ComponenteLista/>
-        <ComponenteLista/>
-        <ComponenteLista/>
-        <ComponenteLista/>
-        <ComponenteLista/>
-        <ComponenteLista/>
-        <ComponenteLista/>
+        <div className="container__lista-inferior__campeoes">
+          <ComponenteLista />
+        </div>
       </div>
-      </div>
-      <Footer/>
+      <Footer />
     </>
   );
-}
+};
 
 export default ListaCampeoes;

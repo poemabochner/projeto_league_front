@@ -20,12 +20,12 @@ const Login = () => {
     login(usuario, senhaUsuario);
   };
 
-  useEffect(() => {
-    if(authenticated) {
-      window.location = '/';
-      return null;
-    }
-  }, [authenticated]);
+  // useEffect(() => {
+  //   if(authenticated) {
+  //     window.location = '/listacampeoes';
+  //     return null;
+  //   }
+  // }, [authenticated]);
 
   return (
     <>
