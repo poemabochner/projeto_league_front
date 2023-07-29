@@ -1,6 +1,6 @@
 import React, { useState, createContext, useContext } from "react";
 import { doLogin } from '../services/auth';
-import { useEffect } from "react";
+
 
 export const AuthContext = createContext();
 
@@ -18,16 +18,11 @@ export const AuthProvider = ({children}) => {
   const [token, setToken] = useState(localStorage.getItem('token'));
 
   const login = async(usuario, senhaUsuario) => {
-    console.log("login auth", { usuario, senhaUsuario });
-    // setUsuario({ id: "123", usuario });
 
     try {
       const resposta = await doLogin(usuario, senhaUsuario);
-      console.log("response headers:", resposta.headers);
       setToken(resposta.headers['authorization'])
-      console.log("token:", token);
       setUsuario(usuario); 
-      console.log("authenticated:", !!usuario);
 
       localStorage.setItem('token', resposta.headers['authorization']);
       localStorage.setItem('usuario', usuario);

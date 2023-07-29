@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 import { useAuth } from "../../contexts/auth";
 
@@ -8,24 +8,17 @@ import LogoProjeto from "../../assets/logo1.png";
 
 const Login = () => {
 
-  const {authenticated, login} = useAuth();
+  const {login} = useAuth();
 
   const [usuario, setUsuario] = useState("");
   const [senhaUsuario, setSenhaUsuario] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("submit", { usuario, senhaUsuario });
+    
     
     login(usuario, senhaUsuario);
   };
-
-  // useEffect(() => {
-  //   if(authenticated) {
-  //     window.location = '/listacampeoes';
-  //     return null;
-  //   }
-  // }, [authenticated]);
 
   return (
     <>

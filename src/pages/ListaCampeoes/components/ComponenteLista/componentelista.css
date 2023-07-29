@@ -3,7 +3,7 @@
   justify-content: space-around;
   background-color: var(--azul-marinho);
   padding: 1em 4em 0.7em 1.5em;
-  border-radius: 5px 5px 0 0;
+  border-radius: 5px;
   align-items: center;
   border: 1px solid var(--preto-principal);
   min-width: 1000px;

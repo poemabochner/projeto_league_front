@@ -40,18 +40,6 @@
   
   align-items: center;
   flex-direction: column;
-  /* max-height: 500px;
-  overflow: auto;
-  white-space: nowrap; */
 }
 
-/* .lista-inferior__botao{
-  background-color: var(--dourado);
-  border: transparent;
-  border-radius: 10px;
-  width: 132px;
-  height: 42px;
-  color: var(--branco-principal);
-  font-family: var(--fonte-principal);
-  font-weight: 700;
-} */
+

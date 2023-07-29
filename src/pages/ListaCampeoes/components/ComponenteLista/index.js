@@ -9,12 +9,13 @@ import { useAuth } from "../../../../contexts/auth";
 const ComponenteLista = () => {
   const { token } = useAuth();
   const [championData, setChampionData] = useState([]);
+  const [campeaoId, setCampeaoId] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await getListaCampeoes(token);
-        console.log(response[0])
+        
         setChampionData(response);
       } catch (error) {
         console.error("Erro ao obter os dados do campeão:", error.message);
@@ -26,17 +27,19 @@ const ComponenteLista = () => {
 
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const openModal = () => {
+  const openModal = (id) => {
+    setCampeaoId(id)
     setIsModalOpen(true);
   };
 
   const closeModal = () => {
     setIsModalOpen(false);
+    setCampeaoId(null);
   };
   return (
     <>
       {championData.map((campeao) => (
-        <div key={campeao.id} className="componente-lista__container">
+        <div key={campeao.idCampeao} className="componente-lista__container">
           <div className="componente-lista__tooltip-img">
             <Tooltip text={campeao.epitetoCampeao}>
               <div>
@@ -61,16 +64,17 @@ const ComponenteLista = () => {
             <p className="componente-lista__conteudo">{campeao.dificuldadeCampeao}</p>
           </div>
           <div>
-            <button onClick={openModal} className="componente-lista__botao">
+            <button onClick={() => openModal(campeao.idCampeao)} className="componente-lista__botao">
               Saiba Mais
             </button>
-            <ModalHabilidades
-              isOpen={isModalOpen}
-              onClose={closeModal}
-            ></ModalHabilidades>
           </div>
         </div>
       ))}
+      <ModalHabilidades
+              id={campeaoId}
+              isOpen={isModalOpen}
+              onClose={closeModal}
+            ></ModalHabilidades>
     </>
   );
 };

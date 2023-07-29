@@ -29,6 +29,11 @@
   padding: 0.8em 0 0 0.5em;
 }
 
+.modal__img {
+  height: 100%;
+  width: 475px;
+}
+
 .modal__container-direito {
   display: flex;
   flex-direction: column;
@@ -58,15 +63,14 @@
 
 .modal-habilidades__container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Duas colunas com largura igual /
-  gap: 1rem; / Espaçamento entre as divs */
+  grid-template-columns: repeat(2, 1fr);
   max-height: 500px;
 }
 
 .modal-habilidades__caixa {
-  padding: 1.5em 0 1em 3.5em;
-  line-height: 1.5em;
-  max-width: 320px;
+  margin-top: 1em;
+  padding-left: 3em;
+  line-height: 1.25em; 
 }
 
 .modal-habilidades__tecla {

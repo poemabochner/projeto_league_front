@@ -5,7 +5,7 @@ import Logo2 from "../../assets/logo2.png";
 import Sair from "../../assets/logout.svg";
 
 function Header() {
-  const { logout } = useAuth();
+  const { logout, usuario } = useAuth();
 
   
 
@@ -21,7 +21,7 @@ function Header() {
         </div>
 
         <div className="header__lado-direito">
-          <p className="header__texto">Fulano, bem-vindo a summoner's rift!</p>
+          <p className="header__texto">{usuario}, bem-vindo a summoner's rift!</p>
           <button onClick={logout} className="header__botao">
             <img className="header__botao-icone" src={Sair} alt="ícone de Sair" />
           </button>
