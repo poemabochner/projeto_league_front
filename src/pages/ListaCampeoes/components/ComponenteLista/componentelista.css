@@ -1,7 +1,6 @@
 .componente-lista__container {
   display: flex;
   justify-content: space-around;
-  background-color: var(--azul-marinho);
   padding: 1em 4em 0.7em 1.5em;
   border-radius: 5px;
   align-items: center;
@@ -22,7 +21,6 @@
 
 .componente-lista__img {
   border-radius: 50%;
-  border: 2px solid var(--branco-secundario);
   width: 70px;
   height: 70px;
   object-fit: cover;
@@ -70,4 +68,33 @@
 .componente-lista__botao:hover {
   cursor: pointer;
   background-color: #92753e;
+}
+
+.componente-lista__container.par {
+  background-color: var(--azul-marinho);
+}
+
+.componente-lista__container.par img {
+  border: 2px solid var(--branco-principal);
+}
+
+
+.componente-lista__container.impar {
+  background-color: var(--branco-principal);
+}
+
+.componente-lista__container.impar h2 {
+  color: var(--preto-principal);
+}
+
+.componente-lista__container.impar button {
+  background-color: var(--verde-agua);
+}
+
+.componente-lista__container.impar button:hover {
+  background-color: #009cb4;
+}
+
+.componente-lista__container.impar img {
+  border: 2px solid var(--preto-principal);
 }

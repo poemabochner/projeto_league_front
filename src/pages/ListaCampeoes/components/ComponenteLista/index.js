@@ -37,8 +37,45 @@ const ComponenteLista = () => {
     setCampeaoId(null);
   };
   return (
-    <>
-      {championData.map((campeao) => (
+    
+<>
+    {championData.map((campeao, index) => (
+      <div
+        key={campeao.idCampeao}
+        className={`componente-lista__container ${index % 2 === 0 ? 'par' : 'impar'}`}
+      >
+        <div className="componente-lista__tooltip-img">
+            <Tooltip text={campeao.epitetoCampeao}>
+              <div>
+                <img
+                  className="componente-lista__img "
+                  src={campeao['urlImagemCampeao']}
+                  alt={`imagem de ${campeao.nomeCampeao}`}
+                />
+              </div>
+            </Tooltip>
+          </div>
+          <div className="componente-lista__caixa">
+            <h2 className="componente-lista__titulo">nome do campeão:</h2>
+            <p className="componente-lista__conteudo">{campeao.nomeCampeao}</p>
+          </div>
+          <div className="componente-lista__caixa">
+            <h2 className="componente-lista__titulo">função:</h2>
+            <p className="componente-lista__conteudo">{campeao.funcaoCampeao}</p>
+          </div>
+          <div className="componente-lista__caixa">
+            <h2 className="componente-lista__titulo">dificuldade:</h2>
+            <p className="componente-lista__conteudo">{campeao.dificuldadeCampeao}</p>
+          </div>
+          <div>
+            <button onClick={() => openModal(campeao.idCampeao)} className="componente-lista__botao">
+              Saiba Mais
+            </button>
+          </div>
+      </div>
+    ))}
+
+      {/* {championData.map((campeao) => (
         <div key={campeao.idCampeao} className="componente-lista__container">
           <div className="componente-lista__tooltip-img">
             <Tooltip text={campeao.epitetoCampeao}>
@@ -69,7 +106,7 @@ const ComponenteLista = () => {
             </button>
           </div>
         </div>
-      ))}
+      ))} */}
       <ModalHabilidades
               id={campeaoId}
               isOpen={isModalOpen}
